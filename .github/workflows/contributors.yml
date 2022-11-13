@@ -1,5 +1,4 @@
 name: Add contributors
-using: 'node16'
 on:
   schedule:
     - cron:  '20 20 * * *'
@@ -14,6 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: BobAnkh/add-contributors@master
         with:
+          node-version: 16
           CONTRIBUTOR: '### Contributors'
           COLUMN_PER_ROW: '6'
           ACCESS_TOKEN: ${{secrets.GITHUB_TOKEN}}
