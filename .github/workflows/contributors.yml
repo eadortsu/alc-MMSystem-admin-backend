@@ -1,4 +1,5 @@
 name: Add contributors
+using: 'node16'
 on:
   schedule:
     - cron:  '20 20 * * *'
