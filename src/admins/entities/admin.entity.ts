@@ -1,5 +1,7 @@
-import { BaseEntity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { BaseEntity, Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 import * as bcrypt from 'bcrypt';
+
+@Entity('admins')
 export class Admin extends BaseEntity {
   @PrimaryGeneratedColumn()
   id: number;
